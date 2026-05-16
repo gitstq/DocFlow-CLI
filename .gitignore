@@ -42,7 +42,7 @@ Thumbs.db
 *.html
 *.json
 !README.md
-!README_zh.md
+!README_zh_TW.md
 !README_en.md
 
 # Test files
