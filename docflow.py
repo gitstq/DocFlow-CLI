@@ -364,7 +364,7 @@ class DocFlowCLI:
         parser.add_argument('-u', '--url', nargs='+', help='网页URL')
         parser.add_argument('-f', '--file', nargs='+', help='本地文件路径')
         parser.add_argument('-o', '--output', required=True, help='输出文件路径')
-        parser.add_argument('-f', '--format', choices=['md', 'markdown', 'html', 'json'],
+        parser.add_argument('-t', '--format', choices=['md', 'markdown', 'html', 'json'],
                            default='md', help='输出格式 (默认: md)')
         parser.add_argument('--no-summary', action='store_true', help='不包含AI摘要')
         parser.add_argument('--no-tags', action='store_true', help='不生成标签')

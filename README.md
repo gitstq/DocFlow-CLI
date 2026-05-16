@@ -98,9 +98,9 @@ docflow --help
 ```bash
 # 聚合 RSS 订阅并输出 Markdown
 python docflow.py -r https://news.ycombinator.com/rss -o output.md
-
+```bash
 # 抓取网页内容输出 HTML
-python docflow.py -u https://example.com/article -o article.html -f html
+python docflow.py -u https://example.com/article -o article.html -t html
 
 # 批量处理本地 Markdown 文件
 python docflow.py -f "./docs/*.md" -o combined.md
@@ -136,7 +136,7 @@ usage: docflow.py [-h] [-r RSS [RSS ...]] [-u URL [URL ...]]
                         本地文件路径（支持通配符）
   -o OUTPUT, --output OUTPUT
                         输出文件路径（必需）
-  -f {md,markdown,html,json}, --format {md,markdown,html,json}
+  -t {md,markdown,html,json}, --format {md,markdown,html,json}
                         输出格式 (默认: md)
   --no-summary          不包含AI摘要
   --no-tags             不生成标签
@@ -169,7 +169,7 @@ python docflow.py \
 python docflow.py \
   -f "./project-docs/**/*.md" \
   -o "./reports/project-documentation.html" \
-  -f html
+  -t html
 ```
 
 #### 场景三：研究资料整理
